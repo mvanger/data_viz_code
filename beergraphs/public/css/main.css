@@ -1,0 +1,75 @@
+path {
+  fill: #000;
+  fill-opacity: .9;
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+path:hover {
+  fill-opacity: 1;
+}
+
+#map {
+  width: 960px;
+  height: 600px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:50px;
+  margin-bottom:100px;
+}
+
+#map2 {
+  width: 960px;
+  height: 600px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:50px;
+  margin-bottom:100px;
+}
+
+svg {
+  position: relative;
+}
+
+#map_wrapper{
+  width: 100%;
+  border-bottom: solid;
+  border-width: 5px;
+}
+
+.header-wrapper {
+  text-align: center;
+  border-bottom: solid;
+  border-width: 5px;
+}
+
+#header-text {
+  font-family: century gothic, sans-serif;
+  font-size: 55px;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.description, .stat-description {
+  font-family: garamond, serif;
+  font-size: 18px;
+}
+
+.stat-description {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.beer-link {
+  color: black;
+  text-decoration: underline;
+}
+
+.beer-link:hover {
+  color: steelblue;
+  text-decoration: none;
+}

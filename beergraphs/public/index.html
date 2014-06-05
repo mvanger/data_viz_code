@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>United States of Beer</title>
+
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.2/leaflet.css">
+    <link rel="stylesheet" href="http://rawgithub.com/Caged/d3-tip/master/examples/example-styles.css">
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <h1 id="header-text">United States of Beer</h1>
+      </br>
+    </div>
+    </br>
+    <div class="button-wrapper">
+      <p class="stat-description">
+        Beers Above Replacement is <a href="http://www.beergraphs.com" class="beer-link">BeerGraphs</a>' proprietary measure of a beer's quality. It is loosely based on baseball's Wins Above Replacement metric, which reflects the number of additional wins a team has amassed relative to their expected number of wins had a replacement level player been brought in.
+      </p>
+      <p class="stat-description">
+        BAR uses ratings and number of check-ins as measures of performance and popularity. It reflects a beer's performance relative to its style, since ratings vary widely between an IPA, and a stout, for example. It also attempts to take a beer's distribution (e.g. national vs. local) into account by logging the number of check-ins.
+      </p>
+      <p class="stat-description">--</p>
+      <p class="stat-description">
+        Style+ is similar to BAR but does not take number of check-ins (popularity) into account. It simply weights a beer's rating relative to its style, but is a good way of finding lesser-known beers.
+      </p>
+      <p class="stat-description">--</p>
+      <p class="stat-description">ABV is Alcohol By Volume.</p>
+      <input type="submit" class="btn btn-default btn-lg filter-button" id="bar-state" value="BAR" />
+      <input type="submit" class="btn btn-default btn-lg filter-button" id="styleplus-state" value="Style+" />
+      <input type="submit" class="btn btn-default btn-lg filter-button" id="abv-state" value="ABV" />
+      </br></br>
+      <p class="description">Hover over a state to view it's average value for the above stats. Clicking a button will filter the data</p>
+    </div>
+    <div id="map_wrapper">
+      <div id="map"></div>
+      <div id="legend"></div>
+    </div>
+
+    <div class="button-wrapper">
+      </br>
+      <input type="submit" class="btn btn-default btn-lg filter-button" id="bar" value="BAR" />
+      <input type="submit" class="btn btn-default btn-lg filter-button" id="styleplus" value="Style+" />
+      <input type="submit" class="btn btn-default btn-lg filter-button" id="abv" value="ABV" />
+      </br></br>
+      <p class="description">Hover over a brewery to view it's average value for the above stats. Clicking a button will filter the data</p>
+    </div>
+    <div id="map_wrapper_2">
+      <div id="map2"></div>
+    </div>
+
+    <script src="js/states.js"></script>
+    <script src="js/brew.js"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.3.11/d3.min.js"></script>
+    <script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.2/leaflet.js"></script>
+    <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.4"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.3/d3-tip.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/symbol.js"></script>
+
+  </body>
+
+</html>
+
